@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rueda del Deportista</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Rueda del Deportista</h1>
+        <h5>Acepta valores del 1 al 10, donde 1 representa "mejorar" y 10 nivel "optimo".</h5>
+        <form id="dataForm">
+            <label for="fisico">Físico:</label>
+            <input type="number" id="fisico" min="1" max="10" oninput="validarRango(this)">
+            
+            <label for="tactico">Táctico/Técnico:</label>
+            <input type="number" id="tactico" min="1" max="10" oninput="validarRango(this)">
+            
+            <label for="mental">Mental/Emocional:</label>
+            <input type="number" id="mental" min="1" max="10" oninput="validarRango(this)">
+            
+            <label for="descanso">Descanso:</label>
+            <input type="number" id="descanso" min="1" max="10" oninput="validarRango(this)">
+            
+            <label for="nutricional">Nutricional:</label>
+            <input type="number" id="nutricional" min="1" max="10" oninput="validarRango(this)">
+            
+            <label for="social">Social:</label>
+            <input type="number" id="social" min="1" max="10" oninput="validarRango(this)">
+            
+            <label for="resultados">Resultados:</label>
+            <input type="number" id="resultados" min="1" max="10" oninput="validarRango(this)">
+            
+            <label for="lesiones">Lesiones:</label>
+            <input type="number" id="lesiones" min="1" max="10" oninput="validarRango(this)">
+            
+            <button type="button" onclick="generateChart()">Generar Gráfico</button>
+        </form>
+        <canvas id="myChart"></canvas>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

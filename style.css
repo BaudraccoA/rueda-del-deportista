@@ -1,0 +1,72 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; /* Alinear al inicio en lugar de centrar verticalmente */
+    min-height: 100vh;
+    margin: 0;
+    padding: 10px; /* Añadir espacio alrededor */
+    background-color: #f4f4f9;
+    overflow-y: auto; /* Permitir scroll vertical */
+}
+
+.container {
+    width: 100%;
+    max-width: 600px;
+    text-align: center;
+    padding: 10px; /* Reducir padding */
+    box-sizing: border-box;
+}
+
+form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 8px; /* Reducir espacio entre elementos */
+    margin-bottom: 10px; /* Reducir margen inferior */
+}
+
+label {
+    grid-column: 1 / span 2; /* Etiquetas ocupan toda la fila para mejor visibilidad */
+    text-align: left;
+    font-size: 0.9em; /* Reducir tamaño de fuente */
+}
+
+input {
+    grid-column: 1 / span 2;
+    padding: 8px; /* Reducir padding de inputs */
+    border: 1px solid #ccc;
+    border-radius: 8px; /* Borde redondeado */
+    width: 100%;
+    box-sizing: border-box;
+}
+
+button {
+    grid-column: 1 / span 2;
+    padding: 8px; /* Reducir padding del botón */
+    background-color: #28a745;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 8px;
+    font-size: 0.9em; /* Reducir tamaño de fuente */
+}
+
+button:hover {
+    background-color: #218838;
+}
+
+canvas {
+    max-width: 100%;
+    margin-top: 10px; /* Reducir margen superior */
+}
+
+@media (max-width: 600px) {
+    form {
+        grid-template-columns: 1fr; /* Una sola columna en pantallas pequeñas */
+    }
+
+    input,
+    button {
+        grid-column: 1 / span 1;
+    }
+}
