@@ -1,4 +1,4 @@
-# Rueda del Deportista
+<h1> Rueda del Deportista </h1>
 
 ¿Qué es?<br>
  La "Rueda del Deportista", también conocida como "Rueda de la Excelencia" o "Rueda del Rendimiento", es una herramienta visual y práctica utilizada para ayudar a los atletas a evaluar, equilibrar y mejorar distintos aspectos de su vida y su rendimiento deportivo. . Este método facilita que el deportista visualice sus puntos fuertes y áreas de mejora.
