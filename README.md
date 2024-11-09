@@ -16,6 +16,7 @@ Beneficios principales:<br>
 
 - [Descripción](#descripción)
 - [Características](#características)
+- [Imagenes](#imagenes)
 - [Tecnologías Usadas](#tecnologías-usadas)
 - [Instalación](#instalación)
 - [Uso](#uso)
@@ -31,6 +32,12 @@ Este proyecto es una página web diseñada para que el usuario (coaching deporti
 - [x] Diseño responsivo
 - [x] Navegación intuitiva
 - [x] Visualización
+
+## Imagenes
+![Imagen pagina web1](https://github.com/user-attachments/assets/87cc03bb-f692-470a-9184-37d4916e6b1a)
+
+![Imagen pagina web2](https://github.com/user-attachments/assets/4500ad7c-7b21-430a-83de-549302d04c05)
+
 
 ## Tecnologías Usadas
 
