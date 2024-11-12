@@ -106,4 +106,33 @@ function generateChart() {
             }
         }
     });
+    // Mostrar el botón de exportar a PDF
+    document.getElementById('exportButton').hidden = false;
 }
+async function exportChart() {
+    const { jsPDF } = window.jspdf;
+    const canvas = document.getElementById('myChart');
+    const ctx = canvas.getContext('2d');
+
+    // Crear un nuevo canvas temporal
+    const tempCanvas = document.createElement('canvas');
+    tempCanvas.width = canvas.width;
+    tempCanvas.height = canvas.height;
+    const tempCtx = tempCanvas.getContext('2d');
+
+    // Establecer fondo blanco en el canvas temporal
+    tempCtx.fillStyle = '#FFFFFF';
+    tempCtx.fillRect(0, 0, tempCanvas.width, tempCanvas.height);
+
+    // Dibujar el contenido del canvas original en el canvas temporal
+    tempCtx.drawImage(canvas, 0, 0);
+
+    // Convertir el canvas temporal a imagen
+    const image = tempCanvas.toDataURL('image/jpeg', 1.0);
+
+    // Crear el PDF
+    const pdf = new jsPDF('landscape');
+    pdf.addImage(image, 'JPEG', 10, 10, 180, 100);  // Ajustar tamaño según sea necesario
+    pdf.save('grafico_rueda_deportista.pdf');
+}
+
