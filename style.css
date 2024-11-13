@@ -16,6 +16,7 @@ body {
     text-align: center;
     padding: 10px; /* Reducir padding */
     box-sizing: border-box;
+    margin-bottom: 50px;
 }
 
 form {
@@ -76,6 +77,42 @@ canvas {
     background-color: #0056b3;
 }
 
+footer {
+    width: 100%;
+    background-color: #28a745; /* Fondo verde */
+    color: white;
+    text-align: center;
+    padding: 2px;
+    position: fixed; /* Fijar el footer al fondo */
+    bottom: 0;
+    left: 0;
+}
+
+footer p {
+    margin: 2px 0;
+    font-size: 0.8em;
+}
+
+.social-icons {
+    margin-top: 5px;
+}
+
+.social-icons a {
+    margin: 0 10px;
+    display: inline-block;
+    text-decoration: none;
+}
+
+.social-icons img {
+    width: 24px;
+    height: 24px;
+    transition: transform 0.2s;
+}
+
+.social-icons img:hover {
+    transform: scale(1.2);
+}
+
 
 @media (max-width: 600px) {
     form {
@@ -86,4 +123,29 @@ canvas {
     button {
         grid-column: 1 / span 1;
     }
+    /* Ajustes para el footer en dispositivos móviles */
+    footer {
+        padding: 5px 0;
+        text-align: center;
+    }
+
+    footer p {
+        font-size: 0.8em; /* Reducir tamaño de texto */
+    }
+
+    .social-icons {
+        margin-top: 10px;
+    }
+
+    .social-icons a {
+        margin: 0 5px; /* Reducir el espacio entre iconos */
+    }
+
+    .social-icons img {
+        width: 20px; /* Reducir el tamaño de los íconos */
+        height: 20px;
+    }
 }
+
+
+
